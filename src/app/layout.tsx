@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import ActiveSectionProvider from "@/context/activeSection";
 import Container from './ul/Container';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,12 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:image" content="/Logo.jpg" />
-      </head>
-      <Container>
-          <ActiveSectionProvider>{children}</ActiveSectionProvider>
-      </Container>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
+
