@@ -5,13 +5,14 @@ import Button from '../Button';
 const Page = () => {
   const [step, setStep] = useState(1);
 
-  const nextStep = (e) => {
+  const nextStep = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-
+  
     if (step < 5) {
       setStep(step + 1);
     }
   };
+  
 
   return (
     <div className="flex min-h-screen flex-col bg-[#1B1B1B] text-white py-36 p-4 flex min-h-screen flex-col items-center justify-between">
