@@ -39,7 +39,7 @@ const Page = () => {
             />
           </div>
           <div className='mt-6 text-[.8rem]'>
-            <input type="checkbox" className='bg-transparent mr-1 '/> I agree to Airhawk's Terms & Conditions and Privacy Policy
+            <input type="checkbox" className='bg-transparent mr-1 '/> I agree to Airhawks Terms & Conditions and Privacy Policy
           </div>
         </div>
         {step < 5 ? (
