@@ -8,7 +8,7 @@ const page = () => {
     <div className='h-[100svh] bg-[#1B1B1B] text-white py-36 p-4 flex min-h-screen flex-col items-center justify-between'>
       <section className='w-[18rem] md:w-[32rem]'>
         <div className='flex items-center'>
-            <Image src="/Logo.jpg" alt="Logo" width={80} height={100} />
+            <Image src="/Logo.jpg" alt="Logo" width={80} height={100} className='rounded-full' />
             <h1 className='font-bold text-[2rem] m-2'>Airhawk</h1>
         </div>
         <div className='mt-32 mb-10'>

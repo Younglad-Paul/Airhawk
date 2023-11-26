@@ -29,7 +29,7 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className='flex mt-10 mb-8'>
+        <div className='mt-10 mb-8'>
           <div className='w-full'>
             <label htmlFor='name'>Create a User Name</label>
             <input
@@ -37,6 +37,9 @@ const Page = () => {
               type='text'
               placeholder='The name you want others to see'
             />
+          </div>
+          <div className='mt-6 text-[.8rem]'>
+            <input type="checkbox" className='bg-transparent mr-1 '/> I agree to Airhawk's Terms & Conditions and Privacy Policy
           </div>
         </div>
         {step < 5 ? (
