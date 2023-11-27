@@ -1,10 +1,13 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Gmail from './Buttons/Gmail'
 import Email from './Buttons/Email'
+import { SessionProvider } from 'next-auth/react';
 
 const page = () => {
   return (
+    <SessionProvider>
     <div className='h-[100svh] bg-[#1B1B1B] text-white py-36 p-4 flex min-h-screen flex-col items-center justify-between'>
       <section className='w-[18rem] md:w-[32rem]'>
         <div className='flex items-center'>
@@ -21,6 +24,7 @@ const page = () => {
         </div>
       </section>
     </div>
+    </SessionProvider>
   )
 }
 
