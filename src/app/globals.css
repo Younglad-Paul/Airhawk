@@ -29,7 +29,25 @@ body {
 
   font-family: 'Work Sans', sans-serif;
 }
+.swiper-button-next{
+  width:106% !important;
+  margin-right: -33px !important;
+}
+.button-next{
+    width:97% !important;
 
+  color: #fff !important;
+  background: linear-gradient(to right, #6CB4EE, #6A0DAD,#6CB4EE);
+  border-radius: 5px;
+  border: none;
+  transition: background-position 0.3s ease;
+  padding: 15px 35px;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all 1s ease-in-out;
+}
 .button {
   background: linear-gradient(to right, #6CB4EE, #6A0DAD,#6CB4EE);
   border-radius: 5px;
@@ -43,7 +61,7 @@ body {
   transition: all 1s ease-in-out;
 }
 
-.button:hover {
+.button:hover,.button-next:hover  {
   background-position: 100% 0;
   text-decoration: none;
   color: #fff;
