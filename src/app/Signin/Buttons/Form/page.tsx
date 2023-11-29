@@ -1,6 +1,7 @@
 'use client'
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../Button';
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,21 +11,30 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
+import { Eye, EyeOff, Mail } from "lucide-react";
+
+
 
 const Page = () => {
-  const [step, setStep] = useState(1);
+  const [showWorkPassword, setShowWorkPassword] = useState(false);
+const toggleWorkIDVisibility = () => {
+  setShowWorkPassword(!showWorkPassword);
+};
 
-  const nextStep = (e: React.MouseEvent<HTMLButtonElement>) => {
+const [step, setStep] = useState(1);
+
+  const nextStep = (e) => {
     e.preventDefault();
-  
+
     if (step < 5) {
       setStep(step + 1);
     }
   };
+
   
   return (
-    <div className="flex min-h-screen flex-col bg-[#1B1B1B] text-white py-36 p-4 flex min-h-screen flex-col items-center justify-between">
-      <form className='w-[18rem] md:w-[25rem]'>
+    <div className="flex min-h-screen flex-col bg-[#1B1B1B] text-white py-36 p-4 flex min-h-screen flex-col items-center justify-between boDy">
+      <form className='w-[20rem] md:w-[25rem]'>
         <div className='text-center mb-6'>
           <h1 className='font-bold text-[2rem]'>Sign up</h1>
           <p>Create an account</p>
@@ -37,7 +47,7 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className='mt-10 mb-8 h-[17rem]'>
+        <div className='mt-10 mb-8 h-[21rem]'>
         <Swiper navigation={{ nextEl: '.button-next'}} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
               <div className="w-full text-start">
@@ -47,7 +57,11 @@ const Page = () => {
                 type="text"
                 placeholder='Create a unique username' />
               </label>
+              <div className='flex text-[.7rem] mt-6'>
+               By continuing you agree to Airhawks <Link href={"#"} className='text-blue-500 underline'> Terms & Conditions</Link> and <Link href={"#"} className='text-blue-500 underline'>Privacy Policy</Link>
               </div>
+              </div>
+
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-full text-start">
@@ -65,7 +79,7 @@ const Page = () => {
               <input 
               className='w-full rounded-md bg-transparent border-2 h-10 mt-6 p-2'
                 type="email"
-                placeholder='example@example.com' />
+                placeholder='address@example.com' />
               </label>
               </div>
             </SwiperSlide>
@@ -80,33 +94,46 @@ const Page = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full text-start">
-              <label htmlFor='username'>Create Password:
+              <div className="flex w-full text-start">
+              <label htmlFor='password'>Create Password:
               <input 
               className='w-full rounded-md bg-transparent border-2 h-10 mt-6 p-2'
-                type="password"
+              type={`${showWorkPassword ? "text" : "password"}`}
                 placeholder='' />
               </label>
+              <span
+                    onClick={toggleWorkIDVisibility}
+                    className="absolute right-3 -translate-y-1/2  mt-[-.6rem] top-1/4 cursor-pointer"
+                  >
+                    {showWorkPassword ? (
+                      <Eye className="w-4 h-4" />
+                    ) : (
+                      <EyeOff className="w-4 h-4" />
+                    )}
+                  </span>
+
               </div>
             </SwiperSlide>
+            <div className=' second'>
             {step < 5 ? (
-          <div className='swiper-button-next w-full text-center'>
-          <button
-            type="button"
-            className=" button-next w-full text-center grid place-items-center  py-1 px-1 rounded-md overflow-hidden"
-            onClick={nextStep}
-            
-          >
-            Next
-          </button>
+                <div className='swiper-button-next w-full text-center'>
+                  <button
+                    type="button"
+                    className="button-next w-full text-center grid place-items-center py-1 px-1 rounded-md overflow-hidden"
+                    onClick={nextStep}
+                  >
+                    Next
+                  </button>
+                </div>
+          ) : (
+            <div className='block mt-[-12rem]'>
+              <Button />
+            </div>
+          )}
           </div>
-        ) : (
-          <div className='block mt-[-10rem]'>
-            <Button />
-          </div>
-        )}
       </Swiper>
         </div>
+        
       </form>
     </div>
   );

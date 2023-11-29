@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Link from 'next/link'
 import { FcGoogle } from "react-icons/fc";
 import { useSession, signIn } from 'next-auth/react';
 

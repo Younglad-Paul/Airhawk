@@ -34,8 +34,7 @@ body {
   margin-right: -33px !important;
 }
 .button-next{
-    width:97% !important;
-
+  width:97% !important;
   color: #fff !important;
   background: linear-gradient(to right, #6CB4EE, #6A0DAD,#6CB4EE);
   border-radius: 5px;
@@ -65,4 +64,11 @@ body {
   background-position: 100% 0;
   text-decoration: none;
   color: #fff;
+}
+
+.first{
+  z-index: 1 !important
+}
+.second{
+  z-index: 1 !important
 }
