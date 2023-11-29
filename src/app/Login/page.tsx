@@ -48,7 +48,7 @@ const nextStep = (e: React.MouseEvent<HTMLButtonElement>) => {
             ))}
           </div>
         </div>
-        <div className='mt-10 mb-8 h-[21rem]'>
+        <div className='mt-10 mb-8 h-[20rem]'>
         <Swiper navigation={{ nextEl: '.button-next'}} modules={[Navigation]} className="mySwiper">
         
             <SwiperSlide>

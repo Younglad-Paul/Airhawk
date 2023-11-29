@@ -48,7 +48,7 @@ const nextStep = (e: React.MouseEvent<HTMLButtonElement>) => {
             ))}
           </div>
         </div>
-        <div className='mt-10 mb-8 h-[21rem]'>
+        <div className='mt-10 mb-8 h-[20rem]'>
         <Swiper navigation={{ nextEl: '.button-next'}} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
               <div className="w-full text-start">
@@ -58,8 +58,8 @@ const nextStep = (e: React.MouseEvent<HTMLButtonElement>) => {
                 type="text"
                 placeholder='Create a unique username' />
               </label>
-              <div className='flex text-[.7rem] mt-6'>
-               By continuing you agree to Airhawks <Link href={"#"} className='text-blue-500 underline'> Terms & Conditions</Link> and <Link href={"#"} className='text-blue-500 underline'>Privacy Policy</Link>
+              <div className='flex text-[.6rem] mt-2 w-full text-red-400'>
+               By continuing you agree to Airhawks <a href={"#"} className='text-blue-500 underline flex'> Terms & Conditions</a> and <a href={"#"} className='text-blue-500 underline flex'>Privacy Policy</a>
               </div>
               </div>
 
