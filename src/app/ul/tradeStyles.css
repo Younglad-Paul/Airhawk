@@ -1,0 +1,14 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  

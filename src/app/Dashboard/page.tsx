@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar/page'
 import Header from './components/Header/page'
 
 export default function Home() {
+  
   return (
     <main className="flex min-h-screen flex-col">
     <SessionProvider>
