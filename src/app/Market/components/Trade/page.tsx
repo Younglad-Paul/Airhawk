@@ -135,7 +135,7 @@ const Page = () => {
             </div>
             <div className='mb-2'>
                 <label htmlFor='price'>Price</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
@@ -147,7 +147,7 @@ const Page = () => {
 
         <div className='mb-2'>
                 <label htmlFor='quality'>Quality</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
@@ -159,7 +159,7 @@ const Page = () => {
 
         <div className='mb-2'>
                 <label htmlFor='total'>Total</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
@@ -181,7 +181,7 @@ const Page = () => {
             </div>
             <div className='mb-2'>
                 <label htmlFor='price'>Price</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
@@ -193,7 +193,7 @@ const Page = () => {
 
         <div className='mb-2'>
                 <label htmlFor='quality'>Quality</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
@@ -205,7 +205,7 @@ const Page = () => {
 
         <div className='mb-2'>
                 <label htmlFor='total'>Total</label>
-        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.4rem]'>
+        <div className='border border-blue-500  mb-4 rounded-l-md w-[22.5rem]'>
             <input type='number'  className='bg-transparent p-2 ' />
             <select className='bg-blue-500 bg-opacity-50 p-2 font-bold border-2 border-opacity-50 border-blue-500 rounded-l-md '>
                 <option>HIVE</option>
